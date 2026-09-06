@@ -77,6 +77,33 @@ The models are evaluated using:
 
 For churn prediction, particular attention is given to **Recall**, since missing customers who are actually going to churn can be costly for a business.
 
+## 📊 Results
+
+The model was evaluated using Accuracy, Precision, Recall, and F1-Score.
+
+| Metric | Score |
+|--------|------:|
+| **Accuracy** | **83.07%** |
+| **Precision** | **80.62%** |
+| **Recall** | **84.46%** |
+| **F1-Score** | **82.50%** |
+
+### Confusion Matrix
+
+|  | Predicted: No Churn | Predicted: Churn |
+|---|---:|---:|
+| **Actual: No Churn** | 5558 | 1235 |
+| **Actual: Churn** | 945 | 5137 |
+
+### Metric Interpretation
+
+- **Accuracy (83.07%)** — Overall percentage of correctly classified customers.
+- **Precision (80.62%)** — Of the customers predicted to churn, 80.62% actually churned.
+- **Recall (84.46%)** — Of the customers who actually churned, the model correctly identified 84.46%.
+- **F1-Score (82.50%)** — Harmonic mean of Precision and Recall.
+
+The model achieved a relatively balanced Precision and Recall, with Recall being particularly important for identifying customers at risk of churn.
+
 ## 💡 Key Findings
 
 The project will analyze which customer characteristics and behaviors are most strongly associated with churn.
